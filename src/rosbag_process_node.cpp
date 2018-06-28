@@ -137,7 +137,7 @@ int main(int argc, char ** argv)
   
   ///tf /tf_static /people/people_arrow_markers /people/people_cylinders_markers
   
-  std::cout<<"----------------------------------"<<std::endl;
+  std::cout<<"-----------total size-------------"<<std::endl;
   std::cout<<v_robot.size()<<std::endl;
   std::cout<<v_vel.size()<<std::endl;
   std::cout<<v_people.size()<<std::endl;
