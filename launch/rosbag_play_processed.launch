@@ -1,7 +1,8 @@
 <launch>
   <param name="use_sim_time" value="true" />
+  <arg name="bag_name" default="processed1.bag"/>
   
-  <node name="rosbag_play" pkg="rosbag" type="play" args="--clock --pause -l /home/sun/rosbags/2-processed/processed1.bag" output="screen"/>
+  <node name="rosbag_play" pkg="rosbag" type="play" args="--clock --pause -l /home/sun/rosbags/2-processed/$(arg bag_name)" output="screen"/>
   
   <node name="rviz" pkg="rviz" type="rviz" args="-d /home/sun/rosbags/rviz/showbag_processed.rviz"/>
   
